@@ -1,0 +1,20 @@
+$body-bg: #def7f9;
+$body-color: #0e1211;
+$white: #ffffff;
+
+$theme-colors: (
+    "light":      #def7f9,
+    "dark":       #0e1211,
+    "primary":    #4e81c1,
+    "secondary":  #3c3c93,
+    "info":       #70696a,
+    "success":    #2d9a5d,
+    "warning":    #e0c82f,
+    "danger":     #ec1e19,
+);
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/maps";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/root";

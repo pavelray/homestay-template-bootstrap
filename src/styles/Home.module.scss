@@ -1,0 +1,47 @@
+.carousel-container {
+  padding: 0rem;
+  margin-bottom: 10rem;
+}
+.title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 2rem 0rem;
+  text-align: center;
+}
+.about {
+  p {
+    font-size: 1.5rem;
+  }
+}
+.divider {
+  margin: 5rem 0;
+}
+.section {
+  margin-bottom: 2rem;
+}
+
+.review {
+  text-align: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBox {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  padding: 0.8em 0 10px 0.8em;
+  border: 1px solid #e7d176;
+  outline: 0;
+  display: inline-block;
+  margin: 0 0 0.8em 0;
+  padding-right: 2em;
+  width: 50%;
+}
