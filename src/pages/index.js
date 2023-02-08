@@ -22,7 +22,7 @@ export default function Home() {
         <section className={styles.section}>
           <div className={[styles["about"], "row"].join(" ")}>
             <div className="display-4 text-center pb-5">About Aaltapori Homestay</div>
-            <div className="col-md-8">
+            <div className="col-md-7">
               <p>
                 ABOUT THE GREEN STAY The GreenStay is a picturesque Homestay
                 with lush green surroundings nestled in the laps of nature,
@@ -41,9 +41,9 @@ export default function Home() {
                 activities to reenergize yourself.
               </p>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5">
               <img
-                src="https://www.thegreenstay.in/assets/images/home02/about-greenforet-img.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Hotel%2FHotel-Image-2.jpeg?alt=media&token=21e92aad-d35b-46fe-9110-89d20731f072"
                 alt="about_image"
                 width="100%"
               />

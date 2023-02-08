@@ -33,19 +33,19 @@ export default function ControlledCarousel() {
       title: "Welcome to Aaltapori Homestay",
       description: "Lorem ipsum dolor sit amet",
       backgroundImageSrc:
-        "https://images.unsplash.com/photo-1618756501529-a591ffb93392?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Hotel%2Fhero-image.jpeg?alt=media&token=3240e618-ce04-4eca-ba3e-c5050d852b9b",
     },
     {
       title: "Welcome to Aaltapori Homestay",
       description: "Lorem ipsum dolor sit amet",
       backgroundImageSrc:
-        "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGRvb2FycyUyMG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Hotel%2FHotel-Image-4.jpeg?alt=media&token=c1fb62a1-0e25-41d2-86c1-203ef68d6a54",
     },
     {
       title: "Welcome to Aaltapori Homestay",
       description: "Lorem ipsum dolor sit amet",
       backgroundImageSrc:
-        "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGRvb2FycyUyMG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Hotel%2FHotel-Image-1.jpeg?alt=media&token=4becef0e-c537-495c-8ffa-f877168bdf8d",
     },
   ];
   const settings = {
