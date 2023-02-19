@@ -6,6 +6,9 @@ import styles from "@/styles/Home.module.scss";
 import ControlledCarousel from "@/components/ui/Carousel/Carousel";
 import { Fragment } from "react";
 import Gallary from "@/components/business/Gallary/Gallary";
+import ContactUs from "@/components/business/ContactUs";
+import Hr from "@/components/ui/Divider/Hr";
+import Link from "next/link";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "700" });
 
@@ -21,48 +24,40 @@ export default function Home() {
       <div className="container">
         <section className={styles.section}>
           <div className={[styles["about"], "row"].join(" ")}>
-            <div className="display-4 text-center pb-5">About Aaltapori Homestay</div>
-            <div className="col-md-7">
+            <div className="display-5 text-center pb-5">
+              About Aaltapori Homestay
+            </div>
+            <div className="col-md-8">
               <p>
-                ABOUT THE GREEN STAY The GreenStay is a picturesque Homestay
-                with lush green surroundings nestled in the laps of nature,
-                offering perfect solitude and soul healing. This place is a
-                nature lover’s paradise, away from the bustling crowds, a
-                perfect destination for people looking for a green holiday. What
-                is around The GreenStay The region is rich in panoramic
-                surprises with hills, waterfalls, beautiful valleys, spring
-                water streams, coffee estates, cardamom estates, etc. Providing
-                a great escape from the everyday hustle-bustle of a busy life.
-                It is a perfect Homestay in Sakleshpur to relax and unwind,
-                without compromising on the comforts of a hotel. You will
-                wittness Lush greenery, early morning dew, bird chirps and
-                complete silence. You will experience an ideal holiday with
-                peaceful relaxation, authentic home-cooked meals and adventurous
-                activities to reenergize yourself.
+                Far away from the hustle bustle of the city, the homestay offers
+                a majestic view of the evergreen surroundings. The homestay acts
+                as a perfect gateway to spend memorable and Quality time with
+                family and friends at a pocket friendly budget.
+                <br />
+                <br />
+                Relax and enjoy your holidays at our homestay. With pleasant
+                temperature throughout the year the place is a marvel for nature
+                lovers which for sure will attract you back to this place.
               </p>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-4">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Hotel%2FHotel-Image-2.jpeg?alt=media&token=21e92aad-d35b-46fe-9110-89d20731f072"
                 alt="about_image"
                 width="100%"
+                height="75%"
               />
             </div>
           </div>
         </section>
-        <hr className={styles.divider} />
-        <section className={styles.section}>
-          <div className="row">
-            <div className="display-4 text-center pb-5">Our Rooms</div>
-            <div className="col-md-12">
-              <Gallary />
-            </div>
-          </div>
-        </section>
-        <hr className={styles.divider} />
+        <Hr />
         <section className={styles.services}>
           <div className="row text-center">
-            <div className="display-4 text-center pb-5">Our Services</div>
+            <div className="display-5 text-center pb-2">Facilities</div>
+            <p className="text-center pb-5">
+              With a wide array of facilities we make sure the guest have a
+              peaceful, comfortable and a memorable stay.
+            </p>
             <div className="col-md-3">
               <div className="card text-bg-warning mb-3">
                 <div className="card-body" style={{ height: "14rem" }}>
@@ -117,10 +112,29 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <hr className={styles.divider} />
+        <Hr />
+        <section className={styles.section}>
+          <div className="row">
+            <div className="display-4 text-center pb-5">Our Rooms</div>
+            <div className="col-md-12">
+              <Gallary count="5" />
+            </div>
+          </div>
+          <div className="row mt-5 text-center">
+            <div className="col-md-12">
+              <Link className="btn btn-secondary" href="/gallary">
+                View All
+              </Link>
+            </div>
+          </div>
+        </section>
+        <Hr />
+
         <section className={styles.section}>
           <div className={[styles["review"], "row"].join(" ")}>
-            <div className="display-4 text-center pb-5">What our guest says about us</div>
+            <div className="display-4 text-center pb-5">
+              What our guest says about us
+            </div>
             <div className="col-lg-3">
               <img
                 src="https://aaltapori.netlify.app/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa-%2FAD5-WCnp-MLc1nOkL73nHwkXVwdYRilZHOpA6PRlUDCP%3Dw60-h60-p-rp-mo-ba3-br100&w=64&q=75"
@@ -207,7 +221,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <hr className={styles.divider} />
+        <Hr />
         <section>
           <div className="display-4 text-center pb-5">Write a letter to us</div>
           <figure className="text-center">
@@ -242,42 +256,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <hr className={styles.divider} />
-        <section className={styles.contactUs}>
-          <div className="row">
-            <div className="display-4 text-center pb-5">Contact Us</div>
-            <div className="col-md-6">
-              <div className="h3 pb-3">Aaltapori Homestay</div>
-              <div className="h6 pb-3">
-                {" "}
-                <span className="material-symbols-outlined loc-icon">
-                  pin_drop
-                </span>{" "}
-                Jayanti Bazar, West Bengal 735227
-              </div>
-              <div className="h6 pb-3">
-                {" "}
-                <span className="material-symbols-outlined">call</span> 081018 30794
-              </div>
-              <div className="h6 pb-3">
-                Check-in: <small className="text-muted">11am</small> &nbsp;
-                Check-out: <small className="text-muted">11am</small>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14257.181369378402!2d89.6110576!3d26.7030102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2156aaa91eba05!2sAaltapori%20Homestay!5e0!3m2!1sen!2sin!4v1674551403560!5m2!1sen!2sin"
-                style={{ border: 0 }}
-                width="100%"
-                height="500px"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-        </section>
-        <hr className={styles.divider} />
+        <Hr />
+        <ContactUs />
+        <Hr />
       </div>
     </Fragment>
   );

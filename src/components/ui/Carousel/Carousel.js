@@ -2,7 +2,8 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import Slider from "react-slick";
-import Slide from "../Slide/Slide";
+import VideoSlide from "../Slide/VideoSlide";
+import Slide from "../Slide/VideoSlide";
 import styles from "./Carousel.module.scss";
 
 export default function ControlledCarousel() {
@@ -11,7 +12,7 @@ export default function ControlledCarousel() {
     return (
       <div
         className={className}
-        style={{ ...style, right: "0px", fontSize: '40px' }}
+        style={{ ...style, right: "0px", fontSize: "40px" }}
         onClick={onClick}
       />
     );
@@ -22,13 +23,13 @@ export default function ControlledCarousel() {
     return (
       <div
         className={className}
-        style={{ ...style, left: "0px", zIndex: "1", fontSize: '40px' }}
+        style={{ ...style, left: "0px", zIndex: "1", fontSize: "40px" }}
         onClick={onClick}
       />
     );
   }
 
-  const slides = [
+  const imageslides = [
     {
       title: "Welcome to Aaltapori Homestay",
       description: "Lorem ipsum dolor sit amet",
@@ -48,14 +49,34 @@ export default function ControlledCarousel() {
         "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Hotel%2FHotel-Image-1.jpeg?alt=media&token=4becef0e-c537-495c-8ffa-f877168bdf8d",
     },
   ];
+  const slides = [
+    {
+      title: "Welcome to Aaltapori Homestay",
+      description: "Lorem ipsum dolor sit amet",
+      backgroundImageSrc:
+        "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Videos%2Faaltapori_outdoor1.mp4?alt=media&token=07462765-5972-4883-9c91-98d125613793",
+    },
+    {
+      title: "Welcome to Aaltapori Homestay",
+      description: "Lorem ipsum dolor sit amet",
+      backgroundImageSrc:
+        "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Videos%2Faaltapori_room1.mp4?alt=media&token=3c7ef688-919d-4b43-b9fd-ebcb7cb962fc",
+    },
+    {
+      title: "Welcome to Aaltapori Homestay",
+      description: "Lorem ipsum dolor sit amet",
+      backgroundImageSrc:
+        "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Videos%2Faaltapori_room2.mp4?alt=media&token=927cd940-2927-43fe-86f0-aeeb493b39fc",
+    },
+  ];
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow className={styles['slick-next']} />,
-    prevArrow: <SamplePrevArrow  />,
+    nextArrow: <SampleNextArrow className={styles["slick-next"]} />,
+    prevArrow: <SamplePrevArrow />,
   };
   return (
     <>
@@ -75,12 +96,12 @@ export default function ControlledCarousel() {
       <div className={styles["carousel-wrapper"]}>
         <Slider {...settings}>
           {slides.map((s) => (
-            <Slide key="" backgroundImageSrc={s.backgroundImageSrc}>
-              <div className={styles['slide-content']}>
+            <VideoSlide key="" backgroundImageSrc={s.backgroundImageSrc}>
+              <div className={styles["slide-content"]}>
                 <div className="display-3 text-center">{s.title}</div>
                 <div className="display-6 text-center">{s.description}</div>
               </div>
-            </Slide>
+            </VideoSlide>
           ))}
         </Slider>
       </div>

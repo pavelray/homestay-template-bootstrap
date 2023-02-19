@@ -3,9 +3,9 @@ import { storage } from "../../../../utils/firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
 
 import SimpleGallery from "../../ui/ImageGallary/ImageGallary";
-const Gallary = () => {
+const Gallary = ({ count, containerName = "Rooms" }) => {
   const [images, setImages] = useState([]);
-  const roomImageRef = ref(storage, "Rooms/");
+  const roomImageRef = ref(storage, `${containerName}/`);
 
   const loadImages = async () => {
     const resp = listAll(roomImageRef);
@@ -18,19 +18,20 @@ const Gallary = () => {
 
   useEffect(() => {
     loadImages();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const formatFirebaseImages = () => {
-    return images.map(url => {
-        return {
-            largeURL: url,
-            thumbnailURL: url,
-            width: 1200,
-            height: 1000,
-        }
-    })
-  }
+    const imageCount = count || images.length;
+    return images.slice(0, imageCount).map((url) => {
+      return {
+        largeURL: url,
+        thumbnailURL: url,
+        width: 1200,
+        height: 1000,
+      };
+    });
+  };
 
   return (
     <Fragment>
