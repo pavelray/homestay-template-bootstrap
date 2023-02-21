@@ -3,6 +3,10 @@
   height: 45rem;
   background: #000;
   color: #fff;
+
+  @media screen and (max-device-width: 640px) {
+    height: 100%;
+  }
 }
 .overlay-image {
   position: absolute;
