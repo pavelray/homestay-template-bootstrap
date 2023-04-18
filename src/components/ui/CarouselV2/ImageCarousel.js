@@ -16,7 +16,7 @@ const ImageCarousel = ({ carouselSlides }) => {
               key={`carousel_slide_${uuidv4()}`}
               className="slide-image img-fluid"
             >
-              <video autoPlay loop muted className="video">
+              <video className="video" autoPlay loop muted defaultmuted playsinline>
                 <source src={slide.url} type="video/mp4" />
               </video>
             </div>
