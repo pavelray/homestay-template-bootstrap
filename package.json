@@ -23,7 +23,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@styled-jsx/plugin-sass": "^4.0.2",
-    "sass": "^1.56.1"
+    "sass": "^1.58.3",
+    "@styled-jsx/plugin-sass": "^4.0.2"
   }
 }

@@ -9,8 +9,30 @@ import Gallary from "@/components/business/Gallary/Gallary";
 import ContactUs from "@/components/business/ContactUs";
 import Hr from "@/components/ui/Divider/Hr";
 import Link from "next/link";
+import { ImageCarousel } from "@/components/ui/CarouselV2/ImageCarousel";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "700" });
+
+const slides = [
+  {
+    title: "Welcome to Aaltapori Homestay",
+    description: "Lorem ipsum dolor sit amet",
+    url:
+      "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Videos%2Faaltapori_outdoor1.mp4?alt=media&token=07462765-5972-4883-9c91-98d125613793",
+  },
+  {
+    title: "Welcome to Aaltapori Homestay",
+    description: "Lorem ipsum dolor sit amet",
+    url:
+      "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Videos%2Faaltapori_room1.mp4?alt=media&token=3c7ef688-919d-4b43-b9fd-ebcb7cb962fc",
+  },
+  {
+    title: "Welcome to Aaltapori Homestay",
+    description: "Lorem ipsum dolor sit amet",
+    url:
+      "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Videos%2Faaltapori_room2.mp4?alt=media&token=927cd940-2927-43fe-86f0-aeeb493b39fc",
+  },
+];
 
 export default function Home() {
   return (
@@ -19,7 +41,7 @@ export default function Home() {
         <title>Create Next App</title>
       </Head>
       <section className={styles["carousel-container"]}>
-        <ControlledCarousel />
+        <ImageCarousel carouselSlides={slides} />
       </section>
       <div className="container">
         <section className={styles.section}>

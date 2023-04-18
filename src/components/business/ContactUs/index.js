@@ -25,7 +25,7 @@ const ContactUs = () => {
           </div>
           <div className="h6 pb-3">
             <a
-              class="btn btn-primary"
+              className="btn btn-primary"
               href="https://wa.me/918101830794"
               role="button"
             >

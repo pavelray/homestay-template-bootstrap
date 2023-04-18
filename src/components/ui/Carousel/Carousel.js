@@ -1,9 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import VideoSlide from "../Slide/VideoSlide";
-import Slide from "../Slide/VideoSlide";
 import styles from "./Carousel.module.scss";
 
 export default function ControlledCarousel() {
@@ -29,26 +28,6 @@ export default function ControlledCarousel() {
     );
   }
 
-  const imageslides = [
-    {
-      title: "Welcome to Aaltapori Homestay",
-      description: "Lorem ipsum dolor sit amet",
-      backgroundImageSrc:
-        "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Hotel%2Fhero-image.jpeg?alt=media&token=3240e618-ce04-4eca-ba3e-c5050d852b9b",
-    },
-    {
-      title: "Welcome to Aaltapori Homestay",
-      description: "Lorem ipsum dolor sit amet",
-      backgroundImageSrc:
-        "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Hotel%2FHotel-Image-4.jpeg?alt=media&token=c1fb62a1-0e25-41d2-86c1-203ef68d6a54",
-    },
-    {
-      title: "Welcome to Aaltapori Homestay",
-      description: "Lorem ipsum dolor sit amet",
-      backgroundImageSrc:
-        "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Hotel%2FHotel-Image-1.jpeg?alt=media&token=4becef0e-c537-495c-8ffa-f877168bdf8d",
-    },
-  ];
   const slides = [
     {
       title: "Welcome to Aaltapori Homestay",
