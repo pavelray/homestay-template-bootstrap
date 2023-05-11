@@ -5,9 +5,10 @@ const ContactUs = () => {
   return (
     <section className={styles.contactUs}>
       <div className="row">
-        <div className="display-4 text-center pb-5">Contact Us</div>
-        <div className="col-md-6">
-          <div className="h3 pb-3">Aaltapori Homestay</div>
+        <h2>Contact Us</h2>
+        <hr />
+        <div className="col-md-6 pt-5 mt-5">
+          <div className="h4 pb-3">Aaltapori Homestay</div>
           <div className="h6 pb-3">
             {" "}
             <span className="material-symbols-outlined loc-icon">
@@ -25,15 +26,38 @@ const ContactUs = () => {
           </div>
           <div className="h6 pb-3">
             <a
-              className="btn btn-primary"
+              className="btn btn-secondary"
               href="https://wa.me/918101830794"
               role="button"
             >
               Message Us on Whatsapp
             </a>
           </div>
+          <div>
+            <h6 className="lead">Social</h6>
+            <div className={styles.socialIcons}>
+              <a
+                href="https://www.facebook.com/Aaltapori-Homestay-2259353944104752/"
+                target="_blank"
+              >
+                <img src="/media/icons/004-facebook.png" />
+              </a>
+              <a
+                href="https://www.instagram.com/aaltapori_homestay/?hl=en"
+                target="_blank"
+              >
+                <img src="/media/icons/005-instagram.png" />
+              </a>
+              <a
+                href="https://www.youtube.com/@jayantibuxatourguide4910"
+                target="_blank"
+              >
+                <img src="/media/icons/006-youtube.png" />
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 pt-5 mt-5">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14257.181369378402!2d89.6110576!3d26.7030102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2156aaa91eba05!2sAaltapori%20Homestay!5e0!3m2!1sen!2sin!4v1674551403560!5m2!1sen!2sin"
             style={{ border: 0 }}

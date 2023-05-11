@@ -8,7 +8,22 @@ const Layout = ({ children }) => {
         <NavbarMenu />
       </header>
       <main style={{ paddingTop: "3.5rem" }}>{children}</main>
-      <footer></footer>
+      <footer>
+        <div className="container mb-5">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              COPYRIGHT © 2023 Aaltapori - ALL RIGHTS RESERVED.
+            </div>
+          </div>
+          <div className="row pt-5">
+            <div className="col-md-12 text-center ">
+              <p>
+                <small className="text-body-secondary">Developed By #Ray</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </Fragment>
   );
 };

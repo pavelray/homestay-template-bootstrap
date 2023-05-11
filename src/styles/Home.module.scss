@@ -1,10 +1,37 @@
 .carousel-container {
-  padding: 0rem;
+  padding: 0rem 20rem;
   margin-bottom: 10rem;
   @media screen and (max-device-width: 640px) {
     margin-bottom: 6rem;
   }
+  @media (min-width: 280px) and (max-width: 480px) {
+    padding: 0rem 0rem;
+  }
 }
+
+.video-container {
+  background-color: #393E46;
+  color: #fff;
+  padding: 1.5rem .8rem;
+  @media (min-width: 280px) and (max-width: 480px) {
+   gap: 10px;
+  }
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.headerContainer {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .title {
   font-size: 2.2rem;
   font-weight: 600;
@@ -46,3 +73,19 @@
   padding-right: 2em;
   width: 50%;
 }
+
+.imageGallary {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imageWrapper {
+  overflow: hidden;
+  width: 33.333%;
+}
+.image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+

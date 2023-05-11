@@ -1,17 +1,13 @@
-import Link from "next/link";
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 const NavbarMenu = () => {
   return (
     <nav className="p-5">
       <div className="row">
-        <div className="order-1 col-7">
+        <div className="col-md-4"></div>
+        <div className="col-md-4 text-center">
           <div
-            className="float-end "
+            className=""
             style={{
               border: "2px solid black",
               padding: "20px",
@@ -22,11 +18,12 @@ const NavbarMenu = () => {
             Welcome To Aaltapori Homestay
           </div>
         </div>
-        <div className="order-2 col-5">
+        <div className="col-md-4">
           <div
-            className="float-end"
             style={{
+              display: 'flex',
               fontSize: "1.2rem",
+              justifyContent: 'flex-end'
             }}
           >
             Phone No: <a href="tel:08101830794">08101830794</a>
