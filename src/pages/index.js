@@ -1,29 +1,9 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.scss";
 import { Fragment } from "react";
-import Gallary from "@/components/business/Gallary/Gallary";
 import ContactUs from "@/components/business/ContactUs";
 import Hr from "@/components/ui/Divider/Hr";
-import Link from "next/link";
-import { ImageCarousel } from "@/components/ui/CarouselV2/ImageCarousel";
 
-const slides = [
-  {
-    title: "Welcome to Aaltapori Homestay",
-    description: "Lorem ipsum dolor sit amet",
-    url: "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Videos%2Faaltapori_outdoor1.mp4?alt=media&token=07462765-5972-4883-9c91-98d125613793",
-  },
-  {
-    title: "Welcome to Aaltapori Homestay",
-    description: "Lorem ipsum dolor sit amet",
-    url: "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Videos%2Faaltapori_room1.mp4?alt=media&token=3c7ef688-919d-4b43-b9fd-ebcb7cb962fc",
-  },
-  {
-    title: "Welcome to Aaltapori Homestay",
-    description: "Lorem ipsum dolor sit amet",
-    url: "https://firebasestorage.googleapis.com/v0/b/honey-cdqdqw.appspot.com/o/Videos%2Faaltapori_room2.mp4?alt=media&token=927cd940-2927-43fe-86f0-aeeb493b39fc",
-  },
-];
 
 export default function Home() {
   return (
@@ -50,7 +30,7 @@ export default function Home() {
             <h4>Welcome To</h4>
             <br />
             <h1>
-              Explore nature with <br /> 'Aaltapori' Jainty
+              Explore nature with <br /> 'Aaltapori' Jayanti
             </h1>
           </div>
         </div>
@@ -279,47 +259,6 @@ export default function Home() {
             </div>
           </section>
         </div>
-
-        {/* <div className="container">
-          <section>
-            <div className="display-4 text-center pb-5">
-              Write a letter to us
-            </div>
-            <figure className="text-center">
-              <blockquote className="blockquote">
-                <p>WE CAN&apos;T WAIT TO SEE YOU.</p>
-              </blockquote>
-              <figcaption className="blockquote-footer">
-                Nightly rates from <cite title="Source Title">&#8377;1900</cite>
-                &nbsp;per night.
-              </figcaption>
-            </figure>
-            <div className={styles.contactForm}>
-              <input
-                type="text"
-                value=""
-                placeholder="Your Name"
-                className={styles.inputBox}
-              />
-              <input
-                type="text"
-                value=""
-                placeholder="Contact Number"
-                className={styles.inputBox}
-              />
-              <textarea
-                value=""
-                placeholder="Message"
-                className={styles.inputBox}
-              ></textarea>
-              <div className="btn-container">
-                <button className="btn btn-secondary">ENQUIRE NOW!</button>
-              </div>
-            </div>
-          </section>
-          <Hr />
-        </div> */}
-
         <div className="container">
           <ContactUs />
           <Hr />
