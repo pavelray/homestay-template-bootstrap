@@ -39,18 +39,21 @@ const ContactUs = () => {
               <a
                 href="https://www.facebook.com/Aaltapori-Homestay-2259353944104752/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src="/media/icons/004-facebook.png" />
               </a>
               <a
                 href="https://www.instagram.com/aaltapori_homestay/?hl=en"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src="/media/icons/005-instagram.png" />
               </a>
               <a
                 href="https://www.youtube.com/@jayantibuxatourguide4910"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src="/media/icons/006-youtube.png" />
               </a>

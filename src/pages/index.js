@@ -30,7 +30,7 @@ export default function Home() {
             <h4>Welcome To</h4>
             <br />
             <h1>
-              Explore nature with <br /> 'Aaltapori' Jayanti
+              Explore nature with <br /> &apos;Aaltapori&apos; Jayanti
             </h1>
           </div>
         </div>
